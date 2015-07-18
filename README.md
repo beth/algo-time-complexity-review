@@ -18,3 +18,5 @@ There are 12 problems as of 7/18. Solution branch will appear on 7/22.
 
 If you are attending the in person session, please also have this tab open: 
 [Understanding Check](https://pollev.com/bigcavern281)
+
+[Slides from Review Session](http://slides.com/bethjohnson/algorithmic-complexityreview-3-4/)

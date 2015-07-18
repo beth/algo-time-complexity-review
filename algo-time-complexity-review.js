@@ -55,7 +55,7 @@ function gcf(num1, num2){
   if (num1 > num2){ //this ensures num1 is the smaller number
     var temp = num1;
     num1 = num2;
-    num2 = num1;
+    num2 = temp;
   }
   for (var i = num1; i > 1; i--){
     if (num1 % i === 0 && num2 % i === 0){
@@ -170,7 +170,7 @@ function findColor(quadTree, coordinates){
   if (!Array.isArray(quadTree.color)){
     return quadTree.color;
   } else {
-    var quadrant = findQuadrant(quadTree, coordinates);
+    var quadrant = findQuadrant(quadTree, coordinates); 
     if (quadrant === "NE") {
       return findColor(quadTree.color[0], coordinates);
     } 
