@@ -16,4 +16,4 @@ There are 12 problems as of 9/3.
 - findColor
 - tournamentRedux
 
-[Slides from Review Session](http://slides.com/bethjohnson/algorithmic-complexityreview-3-4-5/)
+[Slides from Review Session](http://slides.com/bethjohnson/algorithmic-complexityreview-3-4-5-6)
