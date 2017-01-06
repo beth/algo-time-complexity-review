@@ -119,26 +119,8 @@ function tournament(players){
 }
 
 
+
 /////////// Prompt 10 ///////////
-/////////// time complexity: 
-function tournamentRedux(players){
-  var results;
-  if (players.length < 3){
-    return players[0];
-  } else {
-    for (i = 0; i < players.length; i = i + 3){
-      results.push(hotPotato([players[i], players[i+1], players[i+2]])); 
-      //assume hotPotato is a function where 
-      //the three players at a time must play hot potato for 5 minutes. 
-      //the player in the room holding the potato is the winner
-      //and gets returned from the function 
-    }
-    return tournament(results);
-  }
-}
-
-
-/////////// Prompt 11 ///////////
 /////////// time complexity: 
 function allPasswords(allowedChars, maxLength){
   var results = [];
@@ -159,7 +141,7 @@ function allPasswords(allowedChars, maxLength){
 }
 
 
-/////////// Prompt 12 ///////////
+/////////// Prompt 11 ///////////
 /////////// time complexity: 
 function findColor(quadTree, coordinates){
   //a quad tree is a tree where each node has 4 children 
@@ -201,6 +183,28 @@ function findColor(quadTree, coordinates){
         return "SW";
       }
     }
+  }
+}
+
+
+
+/////////// Bonus! ///////////
+/////////// time complexity: 
+//this will require some math to determine 
+
+function tournamentRedux(players){
+  var results;
+  if (players.length < 3){
+    return players[0];
+  } else {
+    for (i = 0; i < players.length; i = i + 3){
+      results.push(hotPotato([players[i], players[i+1], players[i+2]])); 
+      //assume hotPotato is a function where 
+      //the three players at a time must play hot potato for 5 minutes. 
+      //the player in the room holding the potato is the winner
+      //and gets returned from the function 
+    }
+    return tournament(results);
   }
 }
 
