@@ -193,7 +193,7 @@ function findColor(quadTree, coordinates){
 //this will require some math to determine 
 
 function tournamentRedux(players){
-  var results;
+  var results = [];
   if (players.length < 3){
     return players[0];
   } else {
@@ -204,7 +204,7 @@ function tournamentRedux(players){
       //the player in the room holding the potato is the winner
       //and gets returned from the function 
     }
-    return tournament(results);
+    return tournamentRedux(results);
   }
 }
 
